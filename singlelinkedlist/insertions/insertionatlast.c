@@ -50,14 +50,29 @@
 //     }
 //     return head;
 // }
-// struct node *insertionatfirst(struct node *head)
+// struct node* insertionatlast(struct node *head)
 // {
-//     struct node *newnode;
+//     struct node *newnode, *temp = head;
+
 //     newnode = (struct node*)malloc(sizeof(struct node));
-//     printf("enter the data to insert at first :");
-//     scanf("%d",&newnode->data);
-//     newnode->next = head;
-//     head = newnode;
+
+//     printf("\nEnter new data to add at last: ");
+//     scanf("%d", &newnode->data);
+
+//     newnode->next = NULL;
+
+//     if(head == NULL)
+//     {
+//         return newnode;
+//     }
+
+//     while(temp->next != NULL)
+//     {
+//         temp = temp->next;
+//     }
+
+//     temp->next = newnode;
+
 //     return head;
 // }
 // int main()
@@ -66,6 +81,6 @@
 //     int pos;
 //     head = create();
 //     display(head);
-//     head = insertionatfirst(head);
+//     head = insertionatlast(head);
 //     display(head);
 // }
