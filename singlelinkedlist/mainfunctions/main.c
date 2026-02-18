@@ -18,5 +18,8 @@
 //     printf("enter position to delete :");
 //     scanf("%d",&pos);
 //     display(head);
+//     printf("reversed list:\n");
+//     head = reverse_list(head);
+//     display(head);
 //     return 0;
 // }
